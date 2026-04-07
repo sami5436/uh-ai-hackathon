@@ -31,12 +31,11 @@ export default async function Image() {
             flexDirection: 'row',
             alignItems: 'center',
             fontSize: 130,
-            fontWeight: 900,
             letterSpacing: '-0.05em',
-            fontFamily: 'sans-serif',
+            fontFamily: 'Futura, sans-serif',
           }}
         >
-          <span style={{ color: '#C8102E' }}>AI</span>
+          <span style={{ color: '#C8102E', fontWeight: 900 }}>AI</span>
           <span style={{ color: '#555555', marginLeft: '30px', fontWeight: 300 }}>HACKATHON</span>
         </div>
         <div
@@ -46,7 +45,8 @@ export default async function Image() {
             marginTop: '40px',
             textTransform: 'uppercase',
             letterSpacing: '0.2em',
-            fontWeight: 'bold',
+            fontWeight: 700,
+            fontFamily: 'Futura, sans-serif',
           }}
         >
           University of Houston
