@@ -54,7 +54,7 @@ export default function Home() {
               <div className="w-16 h-1.5 bg-gradient-to-r from-uh-red to-orange-500 rounded-r-full"></div>
             </div>
             <p className="text-xl text-uh-charcoal/80 font-light leading-relaxed">
-              IEEE-NSM hosts this intensive Kaggle-based <strong className="font-semibold text-uh-charcoal">Machine Learning competition</strong> where students build, train, and deploy AI models under a strict deadline.
+              Dr Nouhad Rizk, Director of undergraduate studies, computer science department hosts this intensive Kaggle-based <strong className="font-semibold text-uh-charcoal">Machine Learning competition</strong> where students build, train, and deploy AI models under a strict deadline.
             </p>
             <p className="text-lg text-uh-charcoal/60 font-light leading-relaxed border-l-2 border-uh-red/30 pl-4">
               Push your limits. The ultimate catch? You only have access to physical reference materials. No online lookups.
