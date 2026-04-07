@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Futura", var(--font-futura-alt), ui-sans-serif, system-ui, sans-serif;
+  
+  --color-uh-red: #C8102E;
+  --color-uh-white: #FFFFFF;
+  --color-uh-charcoal: #1A1A1A;
+  --color-uh-gray: #F4F4F4;
+  --color-uh-dark: #0D0D0D;
+
+  /* We'll define a subtle circuit board pattern via custom CSS */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .bg-circuit-pattern {
+    background-image: 
+      radial-gradient(circle at 100% 150%, rgba(26,26,26,0.08) 24%, transparent 24%),
+      radial-gradient(circle at 0% 150%, rgba(26,26,26,0.08) 24%, transparent 24%),
+      linear-gradient(to right, rgba(26,26,26,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(26,26,26,0.04) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 40px 40px, 40px 40px;
+    background-position: 0 0, 0 0, 20px 20px, 20px 20px;
+  }
+
+  @keyframes expand {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+  }
+
+  .animate-expand {
+    animation: expand 1s ease-out forwards 0.5s;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-uh-white);
+  color: var(--color-uh-charcoal);
 }
