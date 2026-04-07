@@ -89,9 +89,9 @@ export default function Home() {
           <div className="relative border-l-2 border-uh-charcoal/10 ml-4 md:mx-auto md:max-w-2xl space-y-12">
             {[
               { time: "2:00 PM", title: "Check-in & Opening", desc: "Grab your spot, prompt reveal, and guidelines." },
-              { time: "2:30 PM", title: "Hacking Begins", desc: "Kaggle competition opens. Model training starts immediately." },
+              { time: "2:30 PM", title: "Hacking Begins", desc: "Kaggle competition opens." },
               { time: "4:30 PM", title: "Midpoint Check-in", desc: "Organizers available for clarifications and snacks provided." },
-              { time: "6:30 PM", title: "Submissions & Judging", desc: "Final predictions submitted, private leaderboard revealed, and code reviews." },
+              { time: "6:30 PM", title: "Submissions & Judging", desc: "Final predictions submitted and private leaderboard revealed." },
               { time: "7:00 PM", title: "Awards Ceremony", desc: "Winners announced and closing remarks." },
             ].map((item, i) => (
               <div key={i} className="relative pl-8 md:pl-12 group">
