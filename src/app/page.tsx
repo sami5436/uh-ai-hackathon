@@ -4,11 +4,7 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full selection:bg-uh-red selection:text-white">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[90vh] bg-uh-white flex items-center justify-center overflow-hidden">
-        {/* Floating Accent Glows */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-uh-red/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-uh-charcoal/5 rounded-full blur-[100px] pointer-events-none"></div>
-
+      <section className="relative w-full min-h-[90vh] bg-white flex items-center justify-center overflow-hidden">
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto space-y-8 mt-8">
           {/* Logo with mix-blend-multiply to hide absolute white backgrounds */}
           <div className="w-32 h-32 md:w-56 md:h-56 relative mb-4 mix-blend-multiply hover:scale-105 transition-transform duration-500">
@@ -22,22 +18,22 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="text-6xl md:text-8xl tracking-tight relative group pb-2 flex items-center justify-center gap-3">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight relative group pb-2 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
             <span className="font-black text-uh-red">AI</span>
             <span className="font-light text-uh-charcoal/40">HACKATHON</span>
             {/* Animated underline */}
             <div className="absolute bottom-0 left-0 h-1.5 bg-gradient-to-r from-uh-red to-rose-600 w-full scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out animate-expand"></div>
           </h1>
 
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-uh-charcoal/70 text-base md:text-xl font-medium bg-white/50 backdrop-blur-md py-3 px-8 rounded-2xl border border-uh-charcoal/5 shadow-sm">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-uh-charcoal/70 text-sm md:text-xl font-medium bg-white/50 backdrop-blur-md py-3 px-6 sm:px-8 rounded-2xl border border-uh-charcoal/5 shadow-sm text-center">
             <span>April 24th, 2026</span>
             <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-uh-red animate-pulse"></span>
             <span>University of Houston - PGH 232</span>
           </div>
 
-          <div className="inline-flex items-center px-6 py-2.5 rounded-xl border border-uh-red/20 bg-uh-red/5 text-uh-red shadow-[0_4px_20px_rgba(200,16,46,0.1)] backdrop-blur-sm relative overflow-hidden group">
+          <div className="inline-flex items-center px-4 sm:px-6 py-2.5 rounded-xl border border-uh-red/20 bg-uh-red/5 text-uh-red shadow-[0_4px_20px_rgba(200,16,46,0.1)] backdrop-blur-sm relative overflow-hidden group">
             <div className="absolute inset-0 bg-uh-red/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
-            <span className="relative z-10 text-sm md:text-base font-semibold tracking-wide">
+            <span className="relative z-10 text-xs sm:text-sm md:text-base font-semibold tracking-wide text-center">
               Free Food · Prizes · Open to All Students
             </span>
           </div>
@@ -90,7 +86,7 @@ export default function Home() {
             <div className="w-16 h-1.5 bg-uh-red mx-auto rounded-full"></div>
           </div>
 
-          <div className="relative border-l-2 border-uh-charcoal/10 ml-4 md:ml-1/2 space-y-12">
+          <div className="relative border-l-2 border-uh-charcoal/10 ml-4 md:mx-auto md:max-w-2xl space-y-12">
             {[
               { time: "2:00 PM", title: "Check-in & Setup", desc: "Grab your spot, connect to the network, and prepare your physical references." },
               { time: "2:30 PM", title: "Opening Ceremony", desc: "Introduction, prompt reveal, and guidelines." },
@@ -159,7 +155,7 @@ export default function Home() {
             {/* Same mix-blend trick for footer logo */}
             <div className="w-16 h-16 relative mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
               <Image
-                src="/uh-logo-new.png"
+                src="/uh-logo-new1.png"
                 alt="UH Logo"
                 width={64}
                 height={64}
