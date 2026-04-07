@@ -54,7 +54,7 @@ export default function Home() {
               <div className="w-16 h-1.5 bg-gradient-to-r from-uh-red to-orange-500 rounded-r-full"></div>
             </div>
             <p className="text-xl text-uh-charcoal/80 font-light leading-relaxed">
-              Dr Nouhad Rizk, Director of undergraduate studies, computer science department hosts this intensive Kaggle-based <strong className="font-semibold text-uh-charcoal">Machine Learning competition</strong> where students build, train, and deploy AI models under a strict deadline.
+              Hosted by <strong className="font-semibold text-uh-charcoal">Dr. Nouhad Rizk</strong>, Director of Undergraduate Studies for the Computer Science Department, this intensive Kaggle-based <strong className="font-semibold text-uh-charcoal">Machine Learning competition</strong> challenges students to build, train, and deploy AI models under a strict deadline.
             </p>
             <p className="text-lg text-uh-charcoal/60 font-light leading-relaxed border-l-2 border-uh-red/30 pl-4">
               Push your limits. The ultimate catch? You only have access to physical reference materials. No online lookups.
@@ -88,12 +88,10 @@ export default function Home() {
 
           <div className="relative border-l-2 border-uh-charcoal/10 ml-4 md:mx-auto md:max-w-2xl space-y-12">
             {[
-              { time: "2:00 PM", title: "Check-in & Setup", desc: "Grab your spot, connect to the network, and prepare your physical references." },
-              { time: "2:30 PM", title: "Opening Ceremony", desc: "Introduction, prompt reveal, and guidelines." },
-              { time: "3:00 PM", title: "Hacking Begins", desc: "Kaggle competition opens. Models training starts immediately." },
-              { time: "5:00 PM", title: "Midpoint Check-in", desc: "Organizers available for clarifications and snacks provided." },
-              { time: "6:30 PM", title: "Submission Deadline", desc: "Final predictions submitted to the Kaggle leaderboard." },
-              { time: "6:45 PM", title: "Judging & Reviews", desc: "Private leaderboard revealed and code reviews." },
+              { time: "2:00 PM", title: "Check-in & Opening", desc: "Grab your spot, prompt reveal, and guidelines." },
+              { time: "2:30 PM", title: "Hacking Begins", desc: "Kaggle competition opens. Model training starts immediately." },
+              { time: "4:30 PM", title: "Midpoint Check-in", desc: "Organizers available for clarifications and snacks provided." },
+              { time: "6:30 PM", title: "Submissions & Judging", desc: "Final predictions submitted, private leaderboard revealed, and code reviews." },
               { time: "7:00 PM", title: "Awards Ceremony", desc: "Winners announced and closing remarks." },
             ].map((item, i) => (
               <div key={i} className="relative pl-8 md:pl-12 group">
@@ -172,7 +170,7 @@ export default function Home() {
               Innovate · Compete · Solve
             </p>
             <p className="text-xs font-medium text-uh-charcoal/50">
-              © 2026 IEEE-NSM. All rights reserved.
+              © 2026 Dr. Rizk and IEEE-NSM. All rights reserved.
             </p>
           </div>
         </div>
