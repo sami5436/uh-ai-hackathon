@@ -31,6 +31,15 @@
   .animate-expand {
     animation: expand 1s ease-out forwards 0.5s;
   }
+
+  @keyframes rsvp-glow {
+    0%, 100% { box-shadow: 0 8px 30px rgba(200, 16, 46, 0.4); }
+    50% { box-shadow: 0 8px 50px rgba(200, 16, 46, 0.7), 0 0 20px rgba(200, 16, 46, 0.3); }
+  }
+
+  .animate-rsvp-glow {
+    animation: rsvp-glow 2s ease-in-out infinite;
+  }
 }
 
 body {
